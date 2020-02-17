@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+    nginxsample:
+        image: nginx:latest
+        container_name: nginxsample
+        restart: unless-stopped
+        ports: 
+            - "8024:80"
+
+    mymysql:
+        image: mysql:latest
+        container_name: mymysql
+        ports:
+            - "8025:3306"
+        restart: unless-stopped
+        environment: 
+            MYSQL_DATABASE: THEBIGDATABASEBOY
+            MYSQL_USER: banaan
+            MYSQL_PASSWORD: kiwi
+
+    
