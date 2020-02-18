@@ -18,5 +18,8 @@ services:
             MYSQL_USER: banaan
             MYSQL_PASSWORD: kiwi
             MYSQL_ROOT_PASSWORD: kiwi
+        volumes:
+            - ~/databaseinformation/mysql:/var/lib/mysql
+            
 
     
