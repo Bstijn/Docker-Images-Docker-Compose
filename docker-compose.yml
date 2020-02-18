@@ -17,5 +17,6 @@ services:
             MYSQL_DATABASE: THEBIGDATABASEBOY
             MYSQL_USER: banaan
             MYSQL_PASSWORD: kiwi
+            MYSQL_ROOT_PASSWORD: kiwi
 
     
